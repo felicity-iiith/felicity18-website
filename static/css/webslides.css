@@ -1504,7 +1504,7 @@ form[class*='bg-'] {
 
 @media (min-width: 768px) {
   [class*='content-'] {
-    width: 50%; }
+    width: 100%; }
     [class*='content-']:after, [class*='content-']:before {
       content: '';
       display: table; }
