@@ -1,0 +1,146 @@
+.row:before, .row:after {
+  display: table;
+  content: ' '; }
+
+.row:after {
+  clear: both; }
+
+.underlined {
+  border-bottom: 1px solid;
+  padding-bottom: 2px; }
+
+a {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff; }
+  a.underlined:hover {
+    border-bottom-style: dashed; }
+
+.row [class*=col] {
+  float: left; }
+
+.row.padded > [class*=col],
+.row [class*=col].padded {
+  padding: 5px 10px; }
+
+.row .col1 {
+  width: 8.33333%; }
+
+.row .offset1 {
+  margin-left: 8.33333%; }
+
+.row .col2 {
+  width: 16.66667%; }
+
+.row .offset2 {
+  margin-left: 16.66667%; }
+
+.row .col3 {
+  width: 25%; }
+
+.row .offset3 {
+  margin-left: 25%; }
+
+.row .col4 {
+  width: 33.33333%; }
+
+.row .offset4 {
+  margin-left: 33.33333%; }
+
+.row .col5 {
+  width: 41.66667%; }
+
+.row .offset5 {
+  margin-left: 41.66667%; }
+
+.row .col6 {
+  width: 50%; }
+
+.row .offset6 {
+  margin-left: 50%; }
+
+.row .col7 {
+  width: 58.33333%; }
+
+.row .offset7 {
+  margin-left: 58.33333%; }
+
+.row .col8 {
+  width: 66.66667%; }
+
+.row .offset8 {
+  margin-left: 66.66667%; }
+
+.row .col9 {
+  width: 75%; }
+
+.row .offset9 {
+  margin-left: 75%; }
+
+.row .col10 {
+  width: 83.33333%; }
+
+.row .offset10 {
+  margin-left: 83.33333%; }
+
+.row .col11 {
+  width: 91.66667%; }
+
+.row .offset11 {
+  margin-left: 91.66667%; }
+
+.row .col12 {
+  width: 100%; }
+
+.row .offset12 {
+  margin-left: 100%; }
+
+.row .col-half {
+  width: 4.16667%; }
+
+.row .offset-half {
+  margin-left: 4.16667%; }
+
+@media (max-width: 44rem) {
+  .row [class*=col] {
+    float: none;
+    margin-top: 1em;
+    width: 100%; }
+    .row [class*=col].text-right, .row [class*=col].text-left {
+      text-align: center; }
+  .row [class*=offset] {
+    margin-left: 0; } }
+
+.page.sponsors {
+    text-align: center;
+}
+.some-top-margin {
+  margin-top: 1em; }
+
+.some-moretop-margin {
+  margin-top: 5em; }
+
+.page.sponsors img {
+    display: inline-block;
+    max-width: 80%;
+    background-color: #fff;
+    padding: 1em;
+}
+* {
+  box-sizing: border-box; }
+
+.sponsors p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.5em;
+}
+.page.sponsors p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-top: .7em;
+}
+.sponsorscroll {
+  max-height: 80vh;
+  overflow-y: scroll
+}
