@@ -27,12 +27,12 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
 		<!-- CSS WebSlides -->
 		<link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
-		<link rel="stylesheet" type='text/css' media='all' href="static/css/modal.css">
+		<link rel="stylesheet" type='text/css' media='all' href="static/css/gallery.css">
 		<!-- Optional - CSS SVG Icons (Font Awesome) -->
 		<link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
 		<!-- CSS Countdown -->
 		<link rel="stylesheet" type='text/css' media='all' href="static/css/countdown.css">
-		<script src="https://felicity.iiit.ac.in/static/scripts/vendor/jquery.min.js"></script>
+		<link rel="stylesheet" type='text/css' media='all' href="static/css/blueimp-gallery.min.css">
 		<!-- CSS Sponsers -->
 		<link rel="stylesheet" type='text/css' media='all' href="static/css/sponsors.css">
 		<!-- SOCIAL CARDS (ADD YOUR INFO) -->
@@ -59,7 +59,6 @@
 		<link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
 		<link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
 		<!-- Android -->
-
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="theme-color" content="#333333">
 	</head>
@@ -196,27 +195,82 @@
 			<section class="bg-gradient-h bg-red">
 				<span class="background light" style="background-image:url('static/images/backgrounds/6.jpg')"></span>
 				<div class="content-center bg-trans-dark fadeInUp">
-					<button id="myBtn">Open Gallery</button>
-					<div id="myModal" class="modal">
+					<div class="gallery-grids">
+				<div class="grid">
+			<div class="column 1">
+				<a href="static/images/backgrounds/1.jpg" data-gallery>
+					<figure class="effect-bubba">
+						<img src="static/images/backgrounds/1.jpg" alt="" class="img-responsive">
+						<figcaption>
+							<h4>Background 1</h4>
+							<h5>View Image</h5>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="column 2">
+				<a href="static/images/backgrounds/2.jpg" data-gallery>
+					<figure class="effect-bubba">
+						<img src="static/images/backgrounds/2.jpg" alt="" class="img-responsive">
+						<figcaption>
+							<h4>Background 2</h4>
+							<h5>View Image</h5>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
 
-						<!-- Modal content -->
-						<div class="modal-content">
-							<div class="modal-header">
-								<span class="close">&times;</span>
-							</div>
-							<div class="modal-body">
+			<div class="column 3">
+				<a href="static/images/backgrounds/3.jpg" data-gallery>
+					<figure class="effect-bubba">
+						<img src="static/images/backgrounds/3.jpg" alt="" class="img-responsive">
+						<figcaption>
+							<h4>Background 3</h4>
+							<h5>View Image</h5>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+			</div>
+			<div class="grid">
+				<div class="column 1" style="display: none">
+				<a href="static/images/backgrounds/4.jpg" data-gallery>
+					<figure class="effect-bubba">
+						<img src="static/images/backgrounds/4.jpg" alt="" class="img-responsive">
+						<figcaption>
+							<h4>Background 4</h4>
+							<h5>View Image</h5>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+			<div class="column 2" style="display: none">
+				<a href="static/images/backgrounds/5.jpg" data-gallery>
+					<figure class="effect-bubba">
+						<img src="static/images/backgrounds/5.jpg" alt="" class="img-responsive">
+						<figcaption>
+							<h4>Background 5</h4>
+							<h5>View Image</h5>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
 
-								<section id="photostack-1" class="photostack" style="padding: 0;width: 100%;min-height: 80vh;">
-
-									<div id="inner">
-									</div>
-								</section>
-							</div>
-
-						</div>
-
-					</div>
-
+			<div class="column 3" style="display: none">
+				<a href="static/images/backgrounds/6.jpg" class="swipebox" data-gallery>
+					<figure class="effect-bubba">
+						<img src="static/images/backgrounds/3.jpg" alt="" class="img-responsive">
+						<figcaption>
+							<h4>Background 6</h4>
+							<h5>View Image</h5>
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
 			</section>
 			<section class="bg-gradient-h bg-red">
 				<span class="background light" style="background-image:url('static/images/backgrounds/3.jpg')"></span>
@@ -285,8 +339,19 @@
 					</div>
 				</div>
 			</section>
+			
 			<!-- end article -->
 		</main>
+		<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+	<!-- The container for the modal slides -->
+	<div class="slides"></div>
+	<!-- Controls for the borderless lightbox -->
+	<h3 class="title">Title</h3>
+	<a class="prev">‹</a>
+	<a class="next">›</a>
+	<a class="close">×</a>
+	<!-- The modal dialog, which will be used to wrap the lightbox content -->
+</div>
 		<!-- end main -->
 		<!-- A global footer
 
@@ -298,7 +363,9 @@
 	  <!-- Required -->
 	  <script src="static/js/webslides.js"></script>
 	  <script src="static/js/countdown.js"></script>
-	  <script src="static/js/modal.js"></script>
+	  		<script src="static/js/jquery.min.js"></script>
+		<script src="static/js/jquery.blueimp-gallery.min.js"></script><!-- gallery -->
+
 	  <script>
 window.ws = new WebSlides({
 	loop: false
