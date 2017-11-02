@@ -144,3 +144,9 @@ a {
   max-height: 80vh;
   overflow-y: scroll
 }
+
+section, .slide {
+    padding-bottom: 1rem;
+    padding-top: 10rem;
+}
+
